@@ -9,83 +9,78 @@
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card1"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="130dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="15dp"
         app:cardCornerRadius="15dp"
         app:cardElevation="20dp">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
+            android:gravity="center_vertical"
             android:layout_height="wrap_content">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn1"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="10dp"
                 app:icon="@drawable/baseline_person_24"
-                app:iconGravity="top"
-                app:iconPadding="10dp"
-                app:iconSize="40dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:iconSize="25dp" />
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/name"
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Ashish" />
+
+                <TextView
+                    android:id="@+id/mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+918469562233" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ashishtadvi@gnu.ac.in.com" />
+
+                <TextView
+                    android:id="@+id/addr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kevadia colony -393151" />
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" Ashish"
-                app:layout_constraintEnd_toStartOf="@+id/btn2"
-                app:layout_constraintHorizontal_bias="0.142"
-                app:layout_constraintStart_toEndOf="@+id/btn1"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_marginTop="6dp"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/mobile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="+918469562233"
-                app:layout_constraintEnd_toStartOf="@+id/btn2"
-                app:layout_constraintHorizontal_bias="0.177"
-                app:layout_constraintStart_toEndOf="@+id/btn1"
-                app:layout_constraintTop_toTopOf="parent" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_location"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    app:icon="@drawable/baseline_location_on_24"
+                    app:iconSize="24dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_delete"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    app:icon="@drawable/baseline_delete_24"
+                    app:iconSize="24dp" />
 
-            <TextView
-                android:id="@+id/email"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:text="ashishtadvi@gnu.ac.in.com"
-                app:layout_constraintEnd_toStartOf="@+id/btn2"
-                app:layout_constraintStart_toEndOf="@+id/btn1"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn2"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginEnd="30dp"
-                app:icon="@drawable/baseline_location_on_24"
-                app:iconSize="30dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/addr"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="21dp"
-                android:layout_marginTop="16dp"
-                android:text="kevadia colony -393151"
-                app:layout_constraintEnd_toStartOf="@+id/btn2"
-                app:layout_constraintStart_toEndOf="@+id/btn1"
-                app:layout_constraintTop_toBottomOf="@+id/mobile" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
-
-
 </LinearLayout>
