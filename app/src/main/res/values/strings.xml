@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">MAD_Practical-10_22172012041</string>
+    <string name="app_name">MAD_Practical-11_22172012041</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="menu">Menu</string>
 </resources>
